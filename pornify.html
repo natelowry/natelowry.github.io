@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>In Progress</title>
+<script type="text/javascript">
+var url = prompt("Enter URL to Pornify:", "http://example.com")
+url = url.replace("\"","noquotes")
+</script>
+<div id="check">
+<img width="100%" height="100%" style="position:absolute;top:0px;left:0px;z-index:100;" src="http://3.bp.blogspot.com/_OVgyiH_IAo0/S5CaOqDaLnI/AAAAAAAAI0w/pX0DLz6terw/s320/enter.png" onclick="this.parentNode.removeChild(this)"/>
+</div>
+<script type="text/javascript">
+document.write('<iframe src="'+ url +'" width="100%" height="100%" frameborder="0"></iframe>');
+</script>
+</head>
+<body>
+<div id="content"></div>
+
+<script type="text/javascript">
+var IMG = 5;
+
+
+var _docHeight = document.height || document.body.offsetHeight;
+var _docWidth = document.width || document.body.offsetWidth;
+
+createImages('http://povertyridgewaterfowlers.com/images/censored.png');
+createImages('http://povertyridgewaterfowlers.com/images/star.png');
+createImages('http://povertyridgewaterfowlers.com/images/hott_star.png');
+createImages('http://povertyridgewaterfowlers.com/images/18.png');
+
+
+function createImages(src)
+{
+ for (i = 0; i < IMG; i++)
+  {
+    newimg=document.createElement('img');
+	  newimg.style.display='block';
+	    newimg.src=src;
+		  newimg.setAttribute("style", "position:absolute;z-index: 1;");
+		    document.getElementById("content").parentNode.appendChild(newimg);
+			  var w = _docWidth - newimg.style.width;
+			    var h = _docHeight - newimg.style.height;
+
+				  newimg.style.left =  Math.floor(Math.random()* w);
+				    newimg.style.top = Math.floor(Math.random()* h);
+					 }
+					 }
+
+
+
+					 </script>
+					 </body>
+					 </html>
